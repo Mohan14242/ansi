@@ -1,0 +1,8 @@
+- name: copying the riate key files to the host
+  host: localhost
+  tasks:
+  - name: copying the key to the files
+    ansible.built.copy:
+      src: web.pem
+      dest: /home/centos/private_keys/web.pem
+  
